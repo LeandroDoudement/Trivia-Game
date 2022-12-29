@@ -38,11 +38,6 @@ class Login extends React.Component {
     history.push('/game');
   };
 
-  handleSettingsClick = () => {
-    const { history } = this.props;
-    history.push('/settings');
-  };
-
   render() {
     const { username, email } = this.state;
     return (
@@ -85,14 +80,6 @@ class Login extends React.Component {
               onClick={ this.handlePlayClick }
             >
               Play
-            </button>
-            <button
-              className="Button-config"
-              type="button"
-              data-testid="btn-settings"
-              onClick={ this.handleSettingsClick }
-            >
-              Settings
             </button>
           </form>
         </div>
